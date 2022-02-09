@@ -72,7 +72,7 @@ function onMapClick(e) {
                 format='text/csv');
         if (lat>lat_min && lat<lat_max && lon>lon_min && lon<lon_max){
                 popup
-                        .setLatLng(e.latlng)
+                        .setLatLng(e.latlng).toFixed(3)
                         .setContent('Posición: (' + lat+','+ lon +')<br>'+
                                 "Serie de tiempo: "+
                                 "<input type='button' value='Descargar'"+
