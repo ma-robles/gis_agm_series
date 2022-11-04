@@ -128,13 +128,14 @@ var_anuales = {
 };
 
 function fill_anuales( obj_anual, varname, path, label){
-    for (let i=1980; i<2017; i++){
+    for (let i=1979; i<=2017; i++){
         obj_anual[varname][i] = {
             "value": path,
             'time': i+"-01-01T00:00:00.000Z/"+i+"-12-31T23:00:00.000Z",
             "label": label+i,
             "type" : "anual",
         }
+        console.log(i);
     }
 }
 
