@@ -135,7 +135,6 @@ function fill_anuales( obj_anual, varname, path, label){
             "label": label+i,
             "type" : "anual",
         }
-        console.log(i);
     }
 }
 
