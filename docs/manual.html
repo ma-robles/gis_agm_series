@@ -1,108 +1,158 @@
 <!DOCTYPE html>
-<html lang='es'>
+<html lang='en'>
 <head>
+
+    <title>Manual de usuario de Series de tiempo</title>
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://pronosticos.atmosfera.unam.mx/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Manual de usuario de Series de Tiempo">
+    <meta name="author" content="CUAUSV">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	
-	<title>Manual de usuario Series de tiempo AMGM</title>
-	<meta charset="utf-8" />
+	<style type="text/css">
+	html{
+	border: 8px solid white;!important
+ 	min-height: 100%; } 
+	</style>
+
 </head>
+
 <body>
 
-<h1>Manual de usuario del Sitio Web: Subproyecto 3.3 del Atlas Meteorológico del Golfo de México para plantear escenarios de derrames</h1>
+<h1>Manual de usuario para la aplicación web de visualización y descarga de Series de Tiempo</h1>
 
 <h2>Introducción</h2>
 
-<p>Este manual describe la funcionalidad, navegación y contenido del sitio web, para la descarga de series de datos que forman parte de la climatología del Atlas Meteorológico del Golfo de México para plantear escenarios de derrame. El usuario puede consultarlo para familiarizarse con el sitio, así como hallar información detallada de interés. El contenido del sitio web que se describe a continuación forma parte del subproyecto 3.3 (Modelación numérica regional de la atmósfera sobre el Golfo de México) de la Línea 3 de tal proyecto.</p>
+<p>Este manual describe las funcionalidades, navegación y contenido del sitio web, para la visualización y descarga de series de datos que forman parte de la climatología del Atlas Meteorológico del Golfo de México para plantear escenarios de derrame. El usuario puede consultar este manual para familiarizarse con el sitio web.</p>
 
-<h2><strong>Funcionalidades actuales del sitio creado para la descarga de series de tiempo</strong></h2>
+<h2><strong>Funcionalidades del sitio web creado para la descarga y visualización de series de tiempo</strong></h2>
 
-<p>El acceso a la página tiene su panel en el sitio <a href="https://pronosticos.atmosfera.unam.mx/atlasmeteorologico.gom/">https://pronosticos.atmosfera.unam.mx/atlasmeteorologico.gom/</a></p>
+<p>El acceso a la página de Series de Tiempo se encuentra en el sitio web principal del Atlas Meteorológico del Golfo de México, el cual se puede accesar desde la siguente URL: <a href="https://pronosticos.atmosfera.unam.mx/atlasmeteorologico.gom/"> https://pronosticos.atmosfera.unam.mx/atlasmeteorologico.gom/</a></p>
+<p>Para ingresar directamente a la página de descarga y visualización de Series de Tiempo visita la siguente URL: <a href="https://pronosticos.atmosfera.unam.mx/atlasmeteorologico.gom/products/series_t"> https://pronosticos.atmosfera.unam.mx/atlasmeteorologico.gom/products/series_t</a></p>
 
-<p><img src="img/main_atlas.png" alt="main atlas" /></p>
+<figure class="figure"></figure>
+<img src="img/main_atlas.png" alt="main atlas" class="figure-img img-fluid"/>
+<figcaption class="figure-caption text-center">Página principal del Atlas Meteorológico del Golfo de México</figcaption>
+</figure>
 
-<ol>
-<li>Al hacer click, cambia de ventana a una donde se puede observar el mapa base de Google Earth. Con un recuadro se indica toda el área de donde es posible descargar datos.</li>
+<p>Al hacer click en la sección Series de Tiempo nos enviará a la página donde se encuentra nuestra aplicación web, en dicha sección se moestrará el mapa principal muy intuitivo con un menú integrado fácil de navegar, en conjunto esta aplicación web nos permitira visualizar y descargar los datos de las climatologías en formato de Series de Tiempo.</p>
+
+<figure class="figure">
+<img src="img/mapa.png" alt="mapa" class="figure-img img-fluid" />
+<figcaption class="figure-caption text-center">Mapa principal</figcaption>
+</figure>
+
+<figure class="figure">
+    <img src="img/Imagen1.png" alt="mapa" class="figure-img img-fluid" />
+    <figcaption class="figure-caption text-center">Mapa principal detallado</figcaption>
+</figure>
+
+<!-- <p>Una de las tantas funcionalidades de nuestro mapa es la de acercar o alejar la vista del mapa (zoom) a través de un control ubicado en la esquina superior izquierda <img src="img/mapa_zoom.png" alt="zoom" /></p> -->
+<ol start="1" style="list-style-type: decimal">
+<li>Para seleccionar las coordenadas de interés, se debe hacer click en cualquier parte del mapa, para  agregar un punto y generar una serie de tiempo con relación al punto seleccionado, la selección del punto es libre, es decir, se puede seleccionar cualquier punto que se encuentre dentro del dominio, además existen dos maneras de selección,manualmente (como se explicó anteriormente) e ingresando coordenadas especificas directamente en el widget pop-up de "Agregar punto de interés" que se va actualizando al mover el cursor del mouse o dando click izquierdo en cualquier parte del mapa. La aplicación cuenta con la opción de seleccionar más de un punto a la vez.</li>
 </ol>
-<div class="figure">
-<img src="img/mapa.png" alt="mapa" />
-<p class="caption">mapa</p>
-</div>
-<p>Este mapa tiene la opción de acercar o alejar la imagen a través de un control ubicado en la esquina superior izquierda <img src="img/mapa_zoom.png" alt="zoom" /></p>
+
+<figure class="figure">
+    <img src="img/popup.png" alt="popup punto" class="figure-img img-fluid" />
+    <figcaption class="figure-caption text-center">popup "Agregar punto de interés"</p>
+</figure>
+
 <ol start="2" style="list-style-type: decimal">
-<li>Para comenzar, se debe hacer click en cualquier lugar del mapa. Se ha habilitado la opción de escoger más de un punto para desplegar los parámetros deseados (por punto),</li>
+<li>Al dar click en &quot;<strong>el mapa</strong>&quot; se colocará automáticamente un marcador que indica que se agregó correctamente el punto de interés, a continuación se despliega el <img src="img/pin.png" alt="pin" class="figure-img img-fluid"/> menú de "generación de series de tiempo" donde se pueden modificar los parámetros del punto seleccionado como son: Nombre, latitud, longitud, seleccionar las variableas y estadísticos que se desean desplegar o descarga.</li>
 </ol>
-<div class="figure">
-<img src="img/popup.png" alt="popup punto" />
-<p class="caption">popup punto</p>
-</div>
-<ol start="3" style="list-style-type: decimal">
-<li>Al dar click en &quot;<strong>Agregar punto</strong>&quot; se coloca automáticamente un marcador indicando el punto sobre el mapa <img src="img/pin.png" alt="pin" /> y aparece el siguiente menú:</li>
-</ol>
-<div class="figure">
-<img src="img/punto.png" alt="Punto Seleccionado" />
-<p class="caption">Punto Seleccionado</p>
-</div>
-<p>En la parte superior de este menú, se despliega un campo editable con la coordenada<img src="img/latlon1.png" alt="coordenadas del punto elegido" />. Si la coordenada elegida no es la deseada, en el campo editable se pueden modificar los valores de latitud y longitud, ya sea directamente de manera manual o haciendo click en las flechas que indican hacia arriba o abajo, <img src="img/latlon2.png" /></p>
-<p>En ese caso, se despliega un recuadro indicando la siguiente leyenda: <em>Introduce un valor válido. Los dos valores válidos más aproximados son: num y num</em>. Es posible tomar esos valores o unos que se ajusten más a las necesidades requeridas</p>
+
+<figure class="figure">
+    <img src="img/punto.png" alt="Punto Seleccionado" class="figure-img img-fluid"/>
+    <figcaption class="figure-caption text-center">Menú de edición del punto seleccionado</figcaption>
+</figure>
+
+<p>En la parte superior de este menú, habrá varios campos de texto editable para la manipulación de las coordenadas<img src="img/latlon1.png" alt="coordenadas del punto elegido" class="figure-img img-fluid"/>. Si las coordenadas elegidas no son las deseadas, en el campo editable se pueden modificar los valores de latitud y longitud, ya sea de manera manual o haciendo click en las flechas situadas de lado derecho dentro de cada caja <img src="img/latlon2.png" /></p>
+<p>En ese caso, se despliega un recuadro que indica la siguiente leyenda: <em>Por favor, selecciona un valor válido. Los dos valores válidos más cercanos son: "lat","-lon" </em>. Es posible tomar esos valores u otros requeridos por el usuario.</p>
 <p>Debajo se muestra la lista de estadísticos disponibles para las variables de <strong>Temperatura</strong>, <strong>Viento</strong> y <strong>Precipitación</strong>.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Se seleccionan los estadísticos deseados (para el ejemplo se seleccionaron los <strong>Promedios Diarios</strong> para cada variable),</li>
+</ol>
+
+<figure class="figure">
+    <img src="img/seleccion.png" alt="selección de parámetros" class="figure-img img-fluid"/>
+    <figcaption class="figure-caption text-center">selección de parámetros</figcaption>
+</figure>
+
+<p>Al presionar el botón <img src="img/btn_desplegar.png" alt="desplegar" /> se abrirá una ventana con una gráfica que visualiza los parámetros seleccionados anteriormente, como se muestra en la siguiente figura</p>
+
+<figure class="figure">
+    <img src="img/plot.png" alt="Gráfica de series de tiempo" class="figure-img img-fluid"/>
+    <figcaption class="figure-caption text-center">Gráfica de series de tiempo</figcaption>
+</figure>
+
+<p>Se debe tener en cuenta que al modificar manualmente algún punto (coordenada) es necesario presionar nuevamente el botón de <strong>Desplegar</strong> para que la gráfica vuelva a generarse y así visualizar el nuevo estadístico.</p>
 <ol start="4" style="list-style-type: decimal">
-<li>Se seleccionan los parámetros deseados (para el presente ejemplo se han seleccionado los <strong>Promedios Diarios</strong> para cada variable),</li>
+<li>La descarga de los datos en formato CSV que se seleccionaron anteriormente, se generan al presionar el botón <img src="img/btn_genera.png" alt="Genera CSV" class="figure-img img-fluid"/> El formato CSV, <em>valores separados por comas</em> o '<em>comma separated values</em>' por sus siglas en inglés, es posible visualizarlo en un procesador de textos o editor de hojas de cálculo como excel.</li>
 </ol>
-<div class="figure">
-<img src="img/seleccion.png" alt="selección de parámetros" />
-<p class="caption">selección de parámetros</p>
-</div>
-<p>y se presiona el botón <img src="img/btn_desplegar.png" alt="desplegar" /> para que se muestre una gráfica que muestre tales parámetros como se muestra a continuación,</p>
-<div class="figure">
-<img src="img/plot.png" alt="Gráfica de series de tiempo" />
-<p class="caption">Gráfica de series de tiempo</p>
-</div>
-<p>De igual manera, al posicionarse en algún punto de la gráfica, automáticamente se pueden visualizar los datos relacionados a ese punto en específico,</p>
-<div class="figure">
-<img src="img/leyenda.png" alt="Leyenda y valores" />
-<p class="caption">Leyenda y valores</p>
-</div>
-<p>Se debe tener en cuenta que al modificar manualmente algún punto (la coordenada) se debe presionar el botón de <strong>Desplegar</strong> de nuevo para que la gráfica se actualice.</p>
+
+<figure class="figure">
+    <img src="img/archivoCSV.png" alt="Archivo CSV" class="figure-img img-fluid"/>
+    <figcaption class="figure-caption text-center">Ejemplo de archivo CSV abierto en block de notas</figcaption>
+</figure>
+
 <ol start="5" style="list-style-type: decimal">
-<li>La descarga de los datos que se seleccionaron en el punto 3 se realiza al presionar botón que aparece junto al despliegue de datos, <img src="img/btn_genera.png" alt="Genera CSV" />. Ésta se realiza en un formato CSV. El formato CSV, <em>valores separados por comas</em> o '<em>comma separated values</em>' por sus siglas en inglés, es posible visualizarlo en un procesador de textos o editor de hojas de cálculo,</li>
+<li>En el caso de elegir varios puntos, se visualizarán las marcas correspodientes sobre el mapa y el menú de edición "Generación de series de tiempo" para <em>tres</em> puntos se visualizan de la siguiente manera: cada punto de interés está  separado por pestañas individuales como se muestra en el siguiente ejemplo con los nombres "punto-0", "punto-1", "punto-2".</li>
 </ol>
-<div class="figure">
-<img src="img/archivoCSV.png" alt="Archivo CSV" />
-<p class="caption">Archivo CSV</p>
-</div>
+
+<figure class="figure">
+    <img src="img/ejemplo_3p.png" alt="Ejemplo 3 puntos" class="figure-img img-fluid"/>
+    <figcaption class="figure-caption text-center">Ejemplo de selección de 3 puntos distintos</figcaption>
+</figure>
+
+<p>Para deplegar la gráfica,  se han seleccionado todos los <strong>Promedios diarios</strong> de las tres variables (Temperatura, Viento, Precipitación), se grafican nueve curvas que se  muestran a continuación.</p>
+
+<figure class="figure">
+    <img src="img/ejemplo_plot.png" alt="Ejemplo graficación" class="figure-img img-fluid"/>
+    <figcaption class="figure-caption text-center">Ejemplo de graficación con tres puntos</figcaption>
+</figure>
+
+<p>Las series de datos seleccionadas se pueden descargar con el botón <strong>Generar CSV</strong>. El nombre de los archivos descargados contará con el prefijo: <em>AMGM_series_</em>, seguido por la palabra <em>diarios</em> o <em>mensuales</em>.csv, dependiendo de las características de la variable seleccionada.</p>
+
+<figure class="figure">
+    <img src="img/ejemplo_CSV.png" alt="Ejemplo CSV" class="figure-img img-fluid"/>
+    <figcaption class="figure-caption text-center">Ejemplo CSV para tres puntos</figcaption>
+</figure>
+
+<p>Cada gráfica tiene la opción de mostrar directamente los datos graficados, para ello se utilizará el menú ubicado en la esquina superior derecha de cada gráfica y se deberá pulsar el icono de "Data View".</p>
+
+<figure class="figure">
+    <img src="img/tools_dataview.png" alt="boton dataview" class="figure-img img-fluid"/>
+    <figcaption class="figure-caption text-center">Ejemplo del botón dataview</figcaption>
+</figure>
+
+<p>Al hacer click en <strong>"Data View"</strong>, se despliegan los datos con un formato plano en la pantalla que permite copiarlos directamente a cualquier editor de textos.</p>
+<figure class="figure">
+    <img src="img/dataview.png" alt="dataview" class="figure-img img-fluid" />
+    <figcaption class="figure-caption text-center">Ejemplo de la visualización de los datos utilizando el botón "data-view"</figcaption>
+</figure>
+
 <ol start="6" style="list-style-type: decimal">
-<li>En el caso de elegir varios puntos, se colocan las marcas correspodientes sobre el mapa y los páneles con parámetros se verían así para <em>tres</em> puntos seleccionados,</li>
-</ol>
-<div class="figure">
-<img src="img/ejemplo_3p.png" alt="Ejemplo 3 puntos" />
-<p class="caption">Ejemplo 3 puntos</p>
-</div>
-<p>Al deplegar la gráfica, en este caso se han seleccionado todos los <strong>Promedios diarios</strong> de las tres variables, se obtienen nueve curvas como se muestra a continuación,</p>
-<div class="figure">
-<img src="img/ejemplo_plot.png" alt="Ejemplo graficación" />
-<p class="caption">Ejemplo graficación</p>
-</div>
-<p>Las series de datos seleccionadas se pueden descargar con el botón <strong>Generar CSV</strong>. Los nombres de los archivos descargados contarán con el prefijo: <em>AMGM_series_</em>, seguido por la palabra <em>diarios</em> o <em>mensuales</em>.csv. Dependiendo de las características de la variable deseada, es donde se ubicarán los datos dentro de los archivos csv.</p>
-<div class="figure">
-<img src="img/ejemplo_CSV.png" alt="Ejemplo CSV" />
-<p class="caption">Ejemplo CSV</p>
-</div>
-<p>En caso de que no se deseen los datos en formato CSV, cada gráfica tiene la opción para mostrar los datos graficados, en un menú ubicado en la esquina superior derecha,</p>
-<div class="figure">
-<img src="img/tools_dataview.png" alt="boton dataview" />
-<p class="caption">boton dataview</p>
-</div>
-<p>Al hacer click en <strong>Data View</strong>, se despliegan los datos con un formato plano que es posible copiar directamente a cualquier editor de textos,</p>
-<div class="figure">
-<img src="img/dataview.png" alt="dataview" />
-<p class="caption">dataview</p>
-</div>
-<ol start="7" style="list-style-type: decimal">
-<li>Para descargar el gráfico, se da click en el menú ubicado en la esquina superior derecha junto a Data View, en <em>Save as</em>, es decir, <img src="img/tools_save.png" alt="guardar como" /></li>
+<li>Para descargar el gráfico, se da click en el menú ubicado en la esquina superior derecha junto a Data View, en <em>Save as</em>, <img src="img/tools_save.png" alt="guardar como" /></li>
 </ol>
 
 
-<p><img src="img/tools_save.png" alt="guardar como" /></p>
+<!-- <p><img src="img/tools_save.png" alt="guardar como" /></p> -->
 
-<p>con esta opción se obtiene un archivo denominado automáticamente &lsquo;<em>Climatología 1979-2018</em>&rsquo; y tiene formato de imagen PNG.</p>
+<p>Con esta opción se obtiene un archivo llamado &lsquo;<em>Climatología 1979-2018</em>&rsquo; con formato de imagen .PNG, el cual es la imagen de la serie de tiempo desplegada.</p>
+<figure class="figure">
+    <img src="img/archivo_climatologia.png" alt="ejemplo archivo" class="figure-img img-fluid" />
+    <figcaption class="figure-caption text-center">Ejemplo de archivo descargado al escritorio</figcaption>
+</figure>
 
+<!-- scripts etc-->
+<oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script language="JavaScript">var txt="Manual de Usuario Series de Tiempo ";var espera=140;var refresco=null;function rotulo_title() {document.title=txt;txt=txt.substring(1,txt.length)+txt.charAt(0);refresco=setTimeout("rotulo_title()",espera);}rotulo_title();</script>
 </body>
+
+</html>

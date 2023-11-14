@@ -134,7 +134,7 @@ myChart.setOption({
         }
     ]),
     title:{
-        text:"Climatología 1980-2016",
+        text:"Climatología 1979-2017",
         //subtext:'Series de tiempo',
     },
     xAxis: [
